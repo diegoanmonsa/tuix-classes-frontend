@@ -1,0 +1,24 @@
+[class*="red"] {
+    background-color: red;
+}
+
+[class*="blue"] {
+    background-color: blue;
+}
+
+[class*="green"] {
+    background-color: green;
+}
+
+
+[class*="-1"] {
+    font-size: 12px;
+}
+
+[class*="-2"] {
+    font-size: 24px;
+}
+
+[class*="-3"] {
+    font-size: 36px;
+}
