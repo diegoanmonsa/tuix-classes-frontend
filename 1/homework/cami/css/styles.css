@@ -1,0 +1,108 @@
+/* Bg colors */
+.bg-color-blue {
+  background-color: blue;
+}
+.bg-color-red {
+  background-color: red;
+}
+.bg-color-cyan {
+  background-color: cyan;
+}
+.bg-color-yellow {
+  background-color: yellow;
+}
+
+/* Font colors */
+[class^="blue"] {
+  color: blue;
+}
+[class^="red"] {
+  color: red;
+}
+[class^="cyan"] {
+  color: cyan;
+}
+[class^="black"] {
+  color: black;
+}
+[class^="yellow"] {
+  color: yellow;
+}
+
+/* Font size */
+[class*="-12"] {
+  font-size: 12px;
+}
+[class*="-24"] {
+  font-size: 24px;
+}
+[class*="-36"] {
+  font-size: 36px;
+}
+
+/* Grid View */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.grid-container [class^="grid-col"], .grid-container [class^="grid-row"]  {
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Grid columns */
+.grid-container [class*="col-2"] {
+  grid-column: auto / span 2;
+}
+
+.grid-container [class*="col-3"] {
+  grid-column: auto / span 3;
+}
+
+.grid-container [class*="col-4"] {
+  grid-column: auto / span 4;
+}
+
+.grid-container [class*="col-5"] {
+  grid-column: auto / span 5;
+}
+
+.grid-container [class*="col-6"] {
+  grid-column: auto / span 6;
+}
+
+.grid-container [class*="col-7"] {
+  grid-column: auto / span 7;
+}
+
+.grid-container [class*="col-8"] {
+  grid-column: auto / span 8;
+}
+
+.grid-container [class*="col-9"] {
+  grid-column: auto / span 9;
+}
+
+.grid-container [class*="col-10"] {
+  grid-column: auto / span 10;
+}
+
+.grid-container [class*="col-11"] {
+  grid-column: auto / span 11;
+}
+
+.grid-container [class*="col-12"] {
+  grid-column: auto / span 12;
+}
+
+/* Grid rows */
+.grid-container [class*="row-2"] {
+  grid-row: auto / span 2;
+}
+.grid-container [class*="row-3"] {
+  grid-row: auto / span 3;
+}
