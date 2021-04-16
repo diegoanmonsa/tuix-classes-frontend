@@ -1,0 +1,89 @@
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #1b6cad;
+    margin: 10px;
+}
+
+.row {
+    clear: both;
+}
+
+.row .mega-square {
+    background-color: #1b6cad;
+    position: relative;
+}
+
+.mega-square .tiny-square {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+}
+
+.row .text {
+    width: 200px;
+    float: left;
+}
+
+.row .col-1 {
+    width: 8.3%;
+    float: left;
+}
+
+.row .col-2 {
+    width: calc(8.3% * 2);
+    float: left;
+}
+
+.row .col-3 {
+    width: calc(8.3% * 3);
+    float: left;
+}
+
+.row .col-4 {
+    width: calc(8.3% * 4);
+    float: left;
+}
+
+.row .col-5 {
+    width: calc(8.3% * 5);
+    float: left;
+}
+
+.row .col-6 {
+    width: calc(8.3% * 6);
+    float: left;
+}
+.row .col-7 {
+    width: calc(8.3% * 7);
+    float: left;
+}
+.row .col-8 {
+    width: calc(8.3% * 8);
+    float: left;
+}
+
+.row .col-9 {
+    width: calc(8.3% * 9);
+    float: left;
+}
+
+.row .col-10 {
+    width: calc(8.3% * 10);
+    float: left;
+}
+
+.row .col-11 {
+    width: calc(8.3% * 11);
+    float: left;
+}
+
+.row .col-12 {
+    width: calc(8.3% * 12);
+    float: left;
+}
