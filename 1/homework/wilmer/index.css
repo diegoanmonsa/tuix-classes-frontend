@@ -1,0 +1,76 @@
+[class*="yellow"] {
+    background-color: yellow;
+}
+[class*="blue"] {
+    background-color: blue;
+}
+[class*="red"] {
+    background-color: red;
+}
+[class*="green"] {
+    background-color: green;
+}
+[class*="purple"] {
+    background-color: purple;
+}
+[class*="orange"] {
+    background-color: orange;
+}
+[class*="orangedark"] {
+    background-color: orangered;
+}
+[class*="gray"] {
+    background-color: gray;
+}
+[class*="brown"] {
+    background-color: brown;
+}
+[class*="peru"] {
+    background-color:peru;
+}
+[class*="aqua"] {
+    background-color:aqua;
+}
+[class*="turquoise"] {
+    background-color:turquoise;
+}
+[class*="-1"] {
+    font-size: 12px;
+}
+
+[class*="-2"] {
+    font-size: 24px;
+}
+
+[class*="-3"] {
+    font-size: 36px;
+} 
+
+[class*="grid"] {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+} 
+
+[class*="container"] {
+    max-width: 90%;
+    width: 80%;
+    padding: 0 40px;
+    margin: 10px auto;
+    background-color: gray;
+    
+} 
+[class*="card"] {
+    padding: 3%;
+    border-radius: 10px;
+}
+
+[class*="col"] {
+    grid-template-columns:repeat(12, 1fr);
+} 
+
+@media  screen and (max-width: 992px){
+
+
+}
+    
