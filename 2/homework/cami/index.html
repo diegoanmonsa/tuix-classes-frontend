@@ -1,0 +1,168 @@
+<DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="utf-8"/>
+      <title>Camilo - Clase 2 Float</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+  
+    <body>
+      <!-- ENCABEZADO -->
+      <div class="row marginTop100">
+        <div class="col-6"> 
+          <img src="./assets/headerLogo.png" width="320" height="48.53" alt="El Espectador">
+          <span id="date">Viernes 16 de Abril</span>
+        </div>
+        <div class="col-2 center"> 
+          <svg class="social-icon active" viewBox="0 0 1024 1024"><path d="M480 701.269v0c-18.643-6.589-32-24.369-32-45.269 0-26.51 21.49-48 48-48s48 21.49 48 48c0 20.9-13.357 38.679-32 45.269v83.019c0 8.42-7.163 15.712-16 15.712-8.578 0-16-7.035-16-15.712v-83.019zM256 448v0 0c-53.045 0.15-96 42.866-96 96.303v319.393c0 53.187 43.059 96.303 96.281 96.303h479.438c53.175 0 96.281-42.772 96.281-96.303v-319.393c0-53.093-42.907-96.151-96-96.303v-112.025c0-132.535-107.721-239.976-240-239.976-132.548 0-240 107.415-240 239.976v112.025zM352 448v-111.973c0-79.731 64.471-144.027 144-144.027 79.367 0 144 64.483 144 144.027v111.973h-288z"></path></svg>
+          <svg class="social-icon" viewBox="0 0 1024 1024"><path d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"></path></svg>
+          <svg class="social-icon" viewBox="0 0 1024 1024"><path d="M1024 226.4c-37.6 16.8-78.2 28-120.6 33 43.4-26 76.6-67.2 92.4-116.2-40.6 24-85.6 41.6-133.4 51-38.4-40.8-93-66.2-153.4-66.2-116 0-210 94-210 210 0 16.4 1.8 32.4 5.4 47.8-174.6-8.8-329.4-92.4-433-219.6-18 31-28.4 67.2-28.4 105.6 0 72.8 37 137.2 93.4 174.8-34.4-1-66.8-10.6-95.2-26.2 0 0.8 0 1.8 0 2.6 0 101.8 72.4 186.8 168.6 206-17.6 4.8-36.2 7.4-55.4 7.4-13.6 0-26.6-1.4-39.6-3.8 26.8 83.4 104.4 144.2 196.2 146-72 56.4-162.4 90-261 90-17 0-33.6-1-50.2-3 93.2 59.8 203.6 94.4 322.2 94.4 386.4 0 597.8-320.2 597.8-597.8 0-9.2-0.2-18.2-0.6-27.2 41-29.4 76.6-66.4 104.8-108.6z"></path></svg>
+          <svg class="social-icon" viewBox="0 0 1024 1024"><path d="M1013.8 307.2c0 0-10-70.6-40.8-101.6-39-40.8-82.6-41-102.6-43.4-143.2-10.4-358.2-10.4-358.2-10.4h-0.4c0 0-215 0-358.2 10.4-20 2.4-63.6 2.6-102.6 43.4-30.8 31-40.6 101.6-40.6 101.6s-10.2 82.8-10.2 165.8v77.6c0 82.8 10.2 165.8 10.2 165.8s10 70.6 40.6 101.6c39 40.8 90.2 39.4 113 43.8 82 7.8 348.2 10.2 348.2 10.2s215.2-0.4 358.4-10.6c20-2.4 63.6-2.6 102.6-43.4 30.8-31 40.8-101.6 40.8-101.6s10.2-82.8 10.2-165.8v-77.6c-0.2-82.8-10.4-165.8-10.4-165.8zM406.2 644.8v-287.8l276.6 144.4-276.6 143.4z"></path></svg>
+          <svg class="social-icon" viewBox="0 0 1024 1024"><path d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"></path><path d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"></path><path d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"></path></svg>
+        </div>
+
+        <div class="col-2 center">
+          <button  class="btn btn-yellow">Prueba 1 mes gratis por $9.500</button>
+        </div>
+
+        <div class="col-2 center">
+          <div class="row marginTop0">
+            <div class="col-7">
+              <button  class="btn">Iniciar Sesión</button>
+            </div>
+            <div class="col-4">
+              <svg class="icon" viewBox="0 0 1024 1024"><path d="M992.262 871.396l-242.552-206.294c-25.074-22.566-51.89-32.926-73.552-31.926 57.256-67.068 91.842-154.078 91.842-249.176 0-212.078-171.922-384-384-384-212.076 0-384 171.922-384 384s171.922 384 384 384c95.098 0 182.108-34.586 249.176-91.844-1 21.662 9.36 48.478 31.926 73.552l206.294 242.552c35.322 39.246 93.022 42.554 128.22 7.356s31.892-92.898-7.354-128.22zM384 640c-141.384 0-256-114.616-256-256s114.616-256 256-256 256 114.616 256 256-114.614 256-256 256z"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVBAR -->
+      <div class="row">
+        <div class="navbar center">
+          <div class="col-1"> 
+            <svg class="navbar-icon" viewBox="0 0 878 1024"><path d="M877.714 768v73.143c0 20-16.571 36.571-36.571 36.571h-804.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h804.571c20 0 36.571 16.571 36.571 36.571zM877.714 475.429v73.143c0 20-16.571 36.571-36.571 36.571h-804.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h804.571c20 0 36.571 16.571 36.571 36.571zM877.714 182.857v73.143c0 20-16.571 36.571-36.571 36.571h-804.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h804.571c20 0 36.571 16.571 36.571 36.571z"></path></svg>
+          </div>
+          <div class="col-1 nav-item">Opinión</div>
+          <div class="col-1 nav-item">Economía</div>
+          <div class="col-1 nav-item">Tecnología</div>
+          <div class="col-1 nav-item">Cultura</div>
+          <div class="col-1 nav-item">Entretenimiento</div>
+          <div class="col-1 nav-item">Deportes</div>
+          <div class="col-1 nav-item">Autos</div>
+          <div class="col-1 nav-item">Especiales</div>
+          <div class="col-1 nav-item">Blogs</div>
+          <div class="col-1 nav-item">Colombia 2020</div>
+          <div class="col-1 nav-item">Cromos</div>
+        </div>
+      </div>
+
+      <!-- NOTICIAS -->
+      <div class="row">
+        <div class="col-2">&nbsp;</div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-8">
+              <div class="principal-new">
+                <div class="container-black">
+                  <p class="sub-title"> <span class="light-blue"> Economía </span>- Hace 22 minutos </p>
+                  <p class="title"> La reforma tibutaria explicada desde sus puntos clave </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row marginTop0">
+                <div class="col-12 vertical-new">
+                  <div class="row marginTop0">
+                    <div class="col-6 marginLeft0">
+                      <img width="100%" height="auto" src="./assets/img3.jpg"/>
+                    </div>
+                    <div class="col-6">
+                      <p class="title"> ¿Cómo quedaría su bolsillo con la reforma tributaria? </p>
+                      <p class="sub-title"> <span class="light-blue"> El mundo </span>- Hace 1 hora </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="horizontal-new">
+                    <img width="100%" height="144" src="./assets/img2.jpg"/>
+                    <p class="title"> El gasto del Gobierno en la pandemia: aún no sabemos en qué se invierte peso por peso </p>
+                    <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 2 horas </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row center">
+            <img class="marginTop20" src="./assets/img4.jpeg" width="95%" height="auto"/>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="horizontal-new">
+                <img width="100%" height="200sub" src="./assets/img5.jpg"/>
+                <p class="title"> Reforma tributaria generaría sobrecostos en alimentos, advierten gremios </p>
+                <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 1 hora </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="horizontal-new">
+                <img width="100%" height="200sub" src="./assets/img6.jpg"/>
+                <p class="title"> Comerciantes vuelven a protestar en Bogotá y bloquean TransMilenio </p>
+                <p class="sub-title"> <span class="light-blue"> Bogotá </span>- Hace 2 horas </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="horizontal-new">
+                <img width="100%" height="200sub" src="./assets/img7.jpg"/>
+                <p class="title">¿Qué es y qué consecuencias tiene declararse en desobediencia civil? </p>
+                <p class="sub-title"> <span class="light-blue"> Bogotá </span>- Hace 4 horas </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8 marginLeft0">
+              <div class="col-6">
+                <div class="horizontal-new">
+                  <img width="100%" height="200" src="./assets/img1.jpg"/>
+                  <p class="title"> El gasto del Gobierno en la pandemia: aún no sabemos en qué se invierte peso por peso </p>
+                  <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 2 horas </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="horizontal-new">
+                  <img width="100%" height="200" src="./assets/img5.jpg"/>
+                  <p class="title"> El gasto del Gobierno en la pandemia: aún no sabemos en qué se invierte peso por peso </p>
+                  <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 2 horas </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="horizontal-new">
+                  <img width="100%" height="200" src="./assets/img7.jpg"/>
+                  <p class="title"> El gasto del Gobierno en la pandemia: aún no sabemos en qué se invierte peso por peso </p>
+                  <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 2 horas </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="horizontal-new">
+                  <img width="100%" height="200" src="./assets/img1.jpg"/>
+                  <p class="title"> El gasto del Gobierno en la pandemia: aún no sabemos en qué se invierte peso por peso </p>
+                  <p class="sub-title"> <span class="light-blue"> Política </span>- Hace 2 horas </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-12">
+                  <img width="90%" height="auto" src="./assets/anuncio.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">&nbsp;</div>
+      </div>
+      
+    </body>
+  </html>
