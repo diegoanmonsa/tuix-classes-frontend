@@ -1,0 +1,135 @@
+.table{
+    border: 2px solid gray;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-collapse: collapse;
+    
+    
+}
+
+.table td {
+    border: 2px solid;
+    max-width: 400px;
+    max-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    position: relative;
+    
+}
+
+
+.table thead td {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    height: 60px;    
+}
+
+.table thead td:hover {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color:dimgrey;
+    height: 60px;    
+}
+
+.table tbody td{
+    
+    text-align: justify;
+    padding: 15px;   
+
+}
+
+.overflow{
+    width: auto;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.tooltip {
+   
+  position: absolute;    
+  border-bottom: 1px dotted black;
+}
+.maxwidth{
+  width: 100px;
+}
+
+/* Text desplegable*/
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 450px;
+    background-color: black;    
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    position:absolute;
+    z-index: 3;
+    /*bottom: 125%;*/
+    top: 110%;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: 100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    /*: 100%;*/
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    margin-right: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+ /*Menú desplegable*/
+ 
+ .tooltip .tooltipmenu{
+    visibility: hidden;
+    background-color: rgb(5, 5, 83);
+    font-weight: normal;
+    text-align: left;    
+    color: white;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;  
+    padding: 10px;
+    border-radius: 6px;
+    
+ }
+
+
+ .tooltip .tooltipmenu::after {
+    content: " ";
+    position: fixed;
+    border-width: 10px;
+    border-style: solid;
+    top: 120%;
+    left: 45%;    
+    border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltipmenu{
+    visibility: visible;
+    opacity: 1;
+}
