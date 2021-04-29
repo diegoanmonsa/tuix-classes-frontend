@@ -1,17 +1,16 @@
 .table{
-    border: 2px solid gray;
+    border: 1px solid gray;
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;    
     border-collapse: collapse;
     
     
 }
 
 .table td {
-    border: 2px solid;
-    max-width: 400px;
-    max-height: 20px;
+    border: 1px solid gray;
+    max-width: 600px;    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     position: relative;
@@ -44,22 +43,17 @@
 
 }
 
-.overflow{
-    width: auto;
-    max-width: 100px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
 
+
+.overflow{
+  height: 400px; 
+  overflow-y: scroll
+}
 
 .tooltip {
    
   position: absolute;    
   border-bottom: 1px dotted black;
-}
-.maxwidth{
-  width: 100px;
 }
 
 /* Text desplegable*/
@@ -71,27 +65,23 @@
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 10px 0;
+    padding: 20px;
     position:absolute;
-    z-index: 3;
-    /*bottom: 125%;*/
+    z-index: 3;    
     top: 110%;
     left: 50%;
-    right: 50%;
-    margin-left: -200px;
-    margin-right: 100px;
+    margin-left: -200px;    
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 1.5s;
   }
   
+  /*Flecha del tooltip*/
+
   .tooltip .tooltiptext::after {
     content: " ";
-    position: absolute;
-    /*: 100%;*/
+    position: absolute;    
     bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    margin-right: 5px;
+    left: 50%;   
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black;
@@ -103,17 +93,19 @@
   }
 
  /*Menú desplegable*/
- 
+
  .tooltip .tooltipmenu{
+    width: auto;   
     visibility: hidden;
-    background-color: rgb(5, 5, 83);
+    background-color:gainsboro;
     font-weight: normal;
     text-align: left;    
-    color: white;
-    visibility: hidden;
+    color: white;   
     position: fixed;
-    z-index: 1;  
-    padding: 10px;
+    z-index: 1; 
+    padding-top: 6px; 
+    padding-left: 2px;
+    padding-right: 2px;    
     border-radius: 6px;
     
  }
@@ -132,4 +124,27 @@
 .tooltip:hover .tooltipmenu{
     visibility: visible;
     opacity: 1;
+    border-collapse: collapse;
 }
+
+
+
+.tooltipmenu .p {  
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+}
+
+.tooltipmenu .p:hover{
+  background-color: darkgrey;  
+}
+
+.tooltipmenu .p .img{
+  
+  width: 20px;
+  height: 20px;
+
+}
+
+

@@ -6,19 +6,24 @@
 
     <body>
         <h1>Guitarristas</h1>
-        <div style="height: 300px; overflow-y: scroll">
+        <div class="overflow">
+
             <table class="table">
                 <thead>
                     <tr>
-                    <td class="tooltip">Nombre                       
-                            <div class="tooltipmenu">
-                                    <ul>
-                                        <li>Orden Ascendente</li>
-                                        <li>Orden descendente</li>
-                                        <li>Filtro</li>
-                                    </ul>
-                            </div>
-                    </td>
+                    <td class="tooltip">Nombre 
+                        <div class="tooltipmenu">
+                            <input type="text" placeholder="Buscar" >
+                            <p class="p"> <img class="img" src="./img/ascending.png" alt="">
+                                 Orden ascendente</p>
+                            <p class="p"> <img class="img" src="./img/descending.png" alt="">
+                                Orden descendente</p>
+                            <p class="p"> <img class="img" src="./img/filter.png" alt="">
+                                Filtro</p>
+
+                          </div>
+                    </td>     
+ 
                         <td>Fecha de nacimiento</td>
                         <td>Fecha de muerte</td>
                         <td>Lugar de Origen</td>
