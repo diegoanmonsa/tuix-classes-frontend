@@ -114,10 +114,14 @@
     color: white;   
     position: fixed;
     z-index: 1; 
+    top: 100%;
+    width: 120%;
+    position: absolute;    
     padding-top: 6px; 
     padding-left: 2px;
     padding-right: 2px;    
     border-radius: 6px;
+    
     
  }
 
@@ -126,9 +130,7 @@
     content: " ";
     position: fixed;
     border-width: 10px;
-    border-style: solid;
-    top: 120%;
-    left: 45%;    
+    border-style: solid;       
     border-color: transparent transparent white transparent;
 }
 
@@ -156,6 +158,12 @@
   width: 20px;
   height: 20px;
 
+}
+
+.p .input{
+  float: right;
+  width: 80%;
+  margin-right: 10px;
 }
 
 
