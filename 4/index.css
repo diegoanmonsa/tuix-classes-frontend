@@ -1,0 +1,67 @@
+
+
+:root {
+    --rojo: #af0a44;
+}
+
+
+.big {
+    --w: 100px;
+    --h: 100px;
+    position: relative;
+}
+
+@keyframes rueda {
+    0% {
+        width: 20px;
+        height: 20px;
+    }
+    25% {
+        width: 25px;
+        height: 25px;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.small {
+    --w: 20px;
+    --h: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(0deg);
+    animation-name: rueda;
+    animation-duration: 10s;
+}
+
+.small:hover {
+    transform: rotate(3600deg);
+}
+
+.square {
+    border: 1px solid black;
+    width: var(--w);
+    height: var(--h);
+    cursor: pointer;
+}
+
+.container {
+    --azul: #0b77e3;
+}
+
+.container .red {
+    --rojo: #5eaa11;
+    color: var(--rojo);
+
+}
+
+.container .blue {
+    color: var(--azul);
+}
