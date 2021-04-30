@@ -1,0 +1,170 @@
+.header{
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.intro{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-align: center;
+}
+
+.table{
+    border: 1px solid gray;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;    
+    border-collapse: collapse;
+    
+    
+}
+
+.table td {
+    border: 1px solid gray;
+    max-width: 700px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    position: relative;
+    
+}
+
+
+.table thead td {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    height: 60px;    
+}
+
+.table thead td:hover {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color:dimgrey;
+    height: 60px;    
+}
+
+.table tbody td{
+    
+    text-align: justify;
+    padding: 15px;   
+
+}
+
+
+
+.overflow{
+  height: 360px; 
+  overflow-y: scroll
+}
+
+.tooltip {
+   
+  position: absolute;    
+  border-bottom: 1px dotted black;
+}
+
+/* Text desplegable*/
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 450px;
+    background-color: black;    
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    position:absolute;
+    z-index: 3;    
+    top: 110%;
+    left: 50%;
+    margin-left: -200px;    
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  /*Flecha del tooltip*/
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;    
+    bottom: 100%;
+    left: 50%;   
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+ /*Menú desplegable*/
+
+ .tooltip .tooltipmenu{
+    width: auto;   
+    visibility: hidden;
+    background-color:gainsboro;
+    font-weight: normal;
+    text-align: left;    
+    color: white;   
+    position: fixed;
+    z-index: 1; 
+    top: 100%;
+    width: 120%;
+    position: absolute;    
+    padding-top: 6px; 
+    padding-left: 2px;
+    padding-right: 2px;    
+    border-radius: 6px;
+    
+    
+ }
+
+
+ .tooltip .tooltipmenu::after {
+    content: " ";
+    position: fixed;
+    border-width: 10px;
+    border-style: solid;       
+    border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltipmenu{
+    visibility: visible;
+    opacity: 1;
+    border-collapse: collapse;
+}
+
+
+
+.tooltipmenu .p {  
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+}
+
+.tooltipmenu .p:hover{
+  background-color: darkgrey;  
+  
+}
+
+.tooltipmenu .p .img{
+  
+  width: 20px;
+  height: 20px;
+
+}
+
+.p .input{
+  float: right;
+  width: 80%;
+  margin-right: 10px;
+}
+
+
