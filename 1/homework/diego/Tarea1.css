@@ -1,0 +1,64 @@
+[class^="background-yellow"] {
+  background-color: yellow;
+}
+[class^="background-blue"] {
+  background-color: blue;
+}
+[class^="background-red"] {
+  background-color: red;
+}
+[class^="background-green"] {
+  background-color: green;
+}
+[class^="background-brown"] {
+  background-color: brown;
+}
+
+[class^="yellow"] {
+  color: yellow;
+}
+[class^="blue"] {
+  color: blue;
+}
+[class^="red"] {
+  color: red;
+}
+[class^="green"] {
+  color: green;
+}
+[class^="black"] {
+  color: black;
+}
+
+[class*="-12"] {
+  font-size: 12px;
+}
+[class*="-18"] {
+  font-size: 18px;
+}
+[class*="-24"] {
+  font-size: 24px;
+}
+[class*="-30"] {
+  font-size: 30px;
+}
+
+[class$="normal"] {
+  font-style: normal;
+}
+[class$="italic"] {
+  font-style: italic;
+}
+[class$="oblique"] {
+  font-style: oblique;
+}
+
+[class*="center"] {
+  text-align: center;
+}
+[class*="left"] {
+  text-align: left;
+}
+[class*="right"] {
+  text-align: right;
+}
